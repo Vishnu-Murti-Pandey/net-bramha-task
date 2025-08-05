@@ -1,6 +1,7 @@
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { useState } from "react";
+import image2 from "../assets/image2.png";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -54,7 +55,7 @@ const NBScoreCard = () => {
           <div className="absolute top-[120px] transform -translate-y-1/2 text-center">
             <div className="flex flex-col">
               <img
-                src="src/assets/image2.png"
+                src={image2}
                 alt="windows-explorer"
                 className="w-14 h-20"
               />

@@ -1,6 +1,7 @@
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import SaveAltOutlinedIcon from "@mui/icons-material/SaveAltOutlined";
 import ArrowForwardIosOutlinedIcon from "@mui/icons-material/ArrowForwardIosOutlined";
+import image1 from "../assets/image1.png";
 
 const NBReportSection = () => {
   return (
@@ -51,7 +52,7 @@ const NBReportSection = () => {
         </p>
         <div className="w-45 h-30">
           <img
-            src="src/assets/image1.png"
+            src={image1}
             alt="subscription gauge"
             className="w-full h-full object-contain"
           />
