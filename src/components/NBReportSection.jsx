@@ -51,7 +51,7 @@ const NBReportSection = () => {
         </p>
         <div className="w-45 h-30">
           <img
-            src="src\assets\image1.png"
+            src="src/assets/image1.png"
             alt="subscription gauge"
             className="w-full h-full object-contain"
           />

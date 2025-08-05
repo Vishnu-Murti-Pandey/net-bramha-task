@@ -54,7 +54,7 @@ const NBScoreCard = () => {
           <div className="absolute top-[120px] transform -translate-y-1/2 text-center">
             <div className="flex flex-col">
               <img
-                src="src\assets\image2.png"
+                src="src/assets/image2.png"
                 alt="windows-explorer"
                 className="w-14 h-20"
               />
