@@ -9,25 +9,25 @@ export default function Footer() {
       <div className="flex justify-evenly mt-3">
         <p
           style={{ fontFamily: "Roboto" }}
-          className="text-[14px] font-[400] text-[#262626] underline"
+          className="text-[14px] font-[400] text-[#262626] underline cursor-pointer"
         >
           FAQs
         </p>
         <p
           style={{ fontFamily: "Roboto" }}
-          className="text-[14px] font-[400] text-[#262626] underline"
+          className="text-[14px] font-[400] text-[#262626] underline cursor-pointer"
         >
           Terms and Conditions
         </p>
         <p
           style={{ fontFamily: "Roboto" }}
-          className="text-[14px] font-[400] text-[#262626] underline"
+          className="text-[14px] font-[400] text-[#262626] underline cursor-pointer"
         >
           Privacy Policy
         </p>
         <p
           style={{ fontFamily: "Roboto" }}
-          className="text-[14px] font-[400] text-[#262626] underline"
+          className="text-[14px] font-[400] text-[#262626] underline cursor-pointer"
         >
           Raise a Dispute
         </p>

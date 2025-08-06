@@ -45,10 +45,8 @@ const AccountSummary = () => {
     maintainAspectRatio: false,
   };
 
-  const totalCount = filteredData.reduce((acc, item) => acc + item.count, 0);
-
   return (
-    <div className="flex gap-4 w-full max-w-5xl mx-auto">
+    <div className="flex flex-col items-center lg:flex-row gap-4 w-full mx-auto">
       <div className="bg-white shadow p-5 flex-2 rounded-[8px] border-t-2 border-[#00A6CA]">
         <div className="flex justify-between items-center mb-4">
           <div
@@ -75,7 +73,7 @@ const AccountSummary = () => {
           </div>
         </div>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-12 items-center">
           <div className="w-50 h-50 relative">
             <Doughnut data={chartData} options={chartOptions} />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-sm">

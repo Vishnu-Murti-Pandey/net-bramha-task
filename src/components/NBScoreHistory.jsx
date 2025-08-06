@@ -49,7 +49,7 @@ const NBScoreHistory = () => {
         pointHoverRadius: 6,
         pointBackgroundColor: (ctx) => {
           const val = ctx.raw;
-          return val === 510 ? "#FDCB6E" : "#00A9E0"; // Highlight August point
+          return val === 510 ? "#FDCB6E" : "#00A9E0";
         },
         pointBorderWidth: 0,
       },
@@ -107,15 +107,15 @@ const NBScoreHistory = () => {
   };
 
   return (
-    <div className="rounded-[12px] bg-[#F7F9FA] shadow p-5 mt-2 flex gap-4 max-w-5xl">
+    <div className="rounded-[12px] bg-[#F7F9FA] flex-col items-center lg:flex-row shadow p-5 mt-2 flex gap-4">
       <div className="flex-1 min-w-0">
         <p
           style={{ fontFamily: "Roboto", fontWeight: 400 }}
-          className="text-[16px] text-[#262626] mb-3"
+          className="text-[14px] text-center md:text-start md:text-[14px] text-[#262626] mb-3"
         >
           Trended view of the changes in your NB Score with every refresh.
         </p>
-        <div className="h-[280px] w-full">
+        <div className="h-[240px] md:h-[280px] md:w-full w-[300px]">
           <Line data={chartData} options={chartOptions} />
         </div>
       </div>

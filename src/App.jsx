@@ -34,7 +34,7 @@ export default function App() {
       <div className="flex flex-col flex-1 overflow-auto">
         <Header />
         <main className="space-y-6">
-          <div className="flex justify-evenly pt-6 pb-6">
+          <div className="flex flex-col items-center lg:flex-row gap-4 justify-evenly pt-6 pb-6">
             <NBScoreCard />
             <NBReportSection />
           </div>

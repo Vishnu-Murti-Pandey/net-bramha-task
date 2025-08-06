@@ -58,7 +58,7 @@ export default function ScoreDistributionCard() {
 
         <div className="w-full h-px bg-[#D9D9D9]" />
 
-        <div className="flex justify-evenly">
+        <div className="flex flex-col items-center md:flex-row justify-evenly">
           <div
             style={{ color:"#262626", fontFamily: "Roboto", fontSize: "14px", fontWeight: 400 }}
           >
