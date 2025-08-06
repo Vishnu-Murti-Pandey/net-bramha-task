@@ -7,6 +7,7 @@ import {
   CategoryScale,
   Tooltip,
 } from "chart.js";
+import ChartDataLabels from "chartjs-plugin-datalabels";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import ArrowForward from "@mui/icons-material/ArrowForward";
@@ -16,7 +17,7 @@ ChartJS.register(
   PointElement,
   LinearScale,
   CategoryScale,
-  Tooltip
+  Tooltip,
 );
 
 const NBScoreHistory = () => {
@@ -46,6 +47,7 @@ const NBScoreHistory = () => {
         backgroundColor: "#00A9E0",
         tension: 0.2,
         pointRadius: 5,
+        spanGaps: true,
         pointHoverRadius: 6,
         pointBackgroundColor: (ctx) => {
           const val = ctx.raw;
@@ -61,15 +63,42 @@ const NBScoreHistory = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: (ctx) => `Score: ${ctx.raw}`,
+      tooltip: { enabled: false },
+      datalabels: {
+        display: (ctx) => ctx.dataset.data[ctx.dataIndex] !== null,
+        align: "top",
+        anchor: "end",
+        backgroundColor: (ctx) => {
+          const val = ctx.dataset.data[ctx.dataIndex];
+          return val === 510 ? "#FCD800" : "#00A6CA";
+        },
+        borderRadius: 6,
+        color: "#FFFFFF",
+        font: {
+          weight: 700,
+          size: 14,
+          fontFamily: "Roboto",
+        },
+        formatter: (value, ctx) => {
+          if (value === null) return "";
+          if (value === 510) return "510 >";
+          return `${value} +`;
+        },
+        padding: {
+          top: 4,
+          bottom: 4,
+          left: 6,
+          right: 6,
         },
       },
     },
     scales: {
       x: {
-        grid: { display: false },
+        grid: {
+          display: true,
+          color: "#E0E0E0",
+          borderDash: [4, 4],
+        },
         ticks: {
           font: { size: 12 },
           color: "#7D8BA1",
@@ -116,7 +145,11 @@ const NBScoreHistory = () => {
           Trended view of the changes in your NB Score with every refresh.
         </p>
         <div className="h-[240px] md:h-[280px] md:w-full w-[300px]">
-          <Line data={chartData} options={chartOptions} />
+          <Line
+            data={chartData}
+            options={chartOptions}
+            plugins={[ChartDataLabels]}
+          />
         </div>
       </div>
 

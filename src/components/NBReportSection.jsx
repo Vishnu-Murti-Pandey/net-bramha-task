@@ -9,7 +9,12 @@ const NBReportSection = () => {
       <div className="rounded-xl shadow bg-white p-5 space-y-3">
         <div className="flex justify-between items-start gap-3">
           <div>
-            <h3 className="text-sm font-[700] text-[#046899] ">NB REPORT</h3>
+            <h3
+              style={{ fontFamily: "Roboto" }}
+              className="text-[18px] font-[700] text-[#046899]"
+            >
+              NB REPORT
+            </h3>
             <p className="text-sm text-gray-600 mt-1 w-70">
               Get your personalized NB Report to plan your financial future.
             </p>
@@ -29,18 +34,28 @@ const NBReportSection = () => {
             style={{ fontFamily: "Roboto", fontWeight: 500 }}
             className="text-sm font-medium flex items-center gap-1 underline"
           >
-            <RemoveRedEyeOutlinedIcon style={{ fontSize: "18px", color:"#262626" }} />
+            <RemoveRedEyeOutlinedIcon
+              style={{ fontSize: "18px", color: "#262626" }}
+            />
             <div className="text-[#066A9B]">View Your NB Report</div>
-            <ArrowForwardIosOutlinedIcon style={{ fontSize: "12px", color:"#262626" }} />
+            <ArrowForwardIosOutlinedIcon
+              style={{ fontSize: "12px", color: "#262626" }}
+            />
           </a>
           <a
             href="#"
             style={{ fontFamily: "Roboto", fontWeight: 500 }}
             className="text-sm font-medium text-[#066A9B] flex items-center gap-1 underline"
           >
-            <SaveAltOutlinedIcon style={{ fontSize: "18px", color:"#262626" }} />
-            <div className="text-[#066A9B]">Download Your NB Report With Summary</div>
-            <ArrowForwardIosOutlinedIcon style={{ fontSize: "12px", color:"#262626" }} />
+            <SaveAltOutlinedIcon
+              style={{ fontSize: "18px", color: "#262626" }}
+            />
+            <div className="text-[#066A9B]">
+              Download Your NB Report With Summary
+            </div>
+            <ArrowForwardIosOutlinedIcon
+              style={{ fontSize: "12px", color: "#262626" }}
+            />
           </a>
         </div>
       </div>
