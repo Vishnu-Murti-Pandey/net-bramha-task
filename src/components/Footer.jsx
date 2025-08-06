@@ -6,7 +6,7 @@ export default function Footer() {
     >
       &copy; Copyright 2025 NetBramha Studio LLP. All Rights Reserved.
       <br />
-      <div className="flex justify-evenly mt-3">
+      <div className="flex flex-col justify-evenly mt-3 md:flex-row gap-2">
         <p
           style={{ fontFamily: "Roboto" }}
           className="text-[14px] font-[400] text-[#262626] underline cursor-pointer"

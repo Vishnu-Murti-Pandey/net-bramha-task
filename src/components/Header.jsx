@@ -6,8 +6,8 @@ import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function Header() {
   return (
-    <header className="flex justify-end items-center bg-white shadow px-6 py-4 sticky top-0 z-10">
-      <div className="flex items-center gap-6">
+    <header className="flex justify-center md:justify-end items-center bg-white shadow px-6 py-4 sticky top-0 z-10">
+      <div className="flex items-center gap-6 flex-col md:flex-row">
         <div className="flex items-center text-lg font-medium gap-1 cursor-pointer">
           <HelpOutlineIcon
             sx={{ color: "#004364", height: "19px", width: "19px" }}

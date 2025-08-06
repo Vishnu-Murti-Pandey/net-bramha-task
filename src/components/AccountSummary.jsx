@@ -108,12 +108,14 @@ const AccountSummary = () => {
           description="Learn more about credit reporting and related policies."
           link="Read More"
           icon="⚠️"
+          height="140px"
         />
         <InfoCard
           title="Total Enquiries"
           count="05"
           description="(In last 3 years)"
           icon="📄"
+          height="90px"
         />
       </div>
     </div>
@@ -147,9 +149,9 @@ const LegendItem = ({ color, label, count }) => (
 );
 
 // Info Card
-const InfoCard = ({ title, count, description, link, icon }) => (
+const InfoCard = ({ title, count, description, link, icon, height }) => (
   <div className="bg-white rounded-[8px] border-t-2 border-[#00A6CA] shadow flex gap-3 items-start">
-    <div className="w-12 h-full bg-[#E0F9FF] flex items-start pt-3 pr-2 pl-2 justify-center text-xl">
+    <div style={{ height:height }} className="w-12 rounded-[8px] bg-[#E0F9FF] flex items-start pt-3 pr-2 pl-2 justify-center text-xl">
       {icon}
     </div>
     <div className="w-[100%] flex flex-col gap-2 pt-4 pb-4 pr-4">

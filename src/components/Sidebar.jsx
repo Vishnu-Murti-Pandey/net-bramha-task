@@ -64,30 +64,33 @@ export default function Sidebar() {
             </button>
 
             {overviewOpen && (
-              <div className="flex flex-col gap-4 pl-7 pb-6 mt-1 space-y-1">
-                <div
-                  style={{ fontFamily: "Roboto", fontWeight: 400 }}
-                  className="cursor-pointer text-[#F2F2F2] text-[14px]"
-                >
-                  Score & Report
-                </div>
-                <div
-                  style={{ fontFamily: "Roboto" }}
-                  className="font-[700] text-[#FFFFFF] text-[14px]"
-                >
-                  Summary
-                </div>
-                <div
-                  style={{ fontFamily: "Roboto", fontWeight: 400 }}
-                  className="cursor-pointer text-[#F2F2F2] text-[14px]"
-                >
-                  History
-                </div>
-                <div
-                  style={{ fontFamily: "Roboto", fontWeight: 400 }}
-                  className="cursor-pointer text-[#F2F2F2] text-[14px]"
-                >
-                  Where You Stand
+              <div className="flex gap-5 pl-[40px]">
+                <div className="h-[150px] w-[2px] bg-[#FFFFFF]"></div>
+                <div className="flex flex-col gap-4 pb-6 mt-1 space-y-1">
+                  <div
+                    style={{ fontFamily: "Roboto", fontWeight: 400 }}
+                    className="cursor-pointer text-[#F2F2F2] text-[14px]"
+                  >
+                    Score & Report
+                  </div>
+                  <div
+                    style={{ fontFamily: "Roboto" }}
+                    className="font-[700] text-[#FFFFFF] text-[14px]"
+                  >
+                    Summary
+                  </div>
+                  <div
+                    style={{ fontFamily: "Roboto", fontWeight: 400 }}
+                    className="cursor-pointer text-[#F2F2F2] text-[14px]"
+                  >
+                    History
+                  </div>
+                  <div
+                    style={{ fontFamily: "Roboto", fontWeight: 400 }}
+                    className="cursor-pointer text-[#F2F2F2] text-[14px]"
+                  >
+                    Where You Stand
+                  </div>
                 </div>
               </div>
             )}
